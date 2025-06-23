@@ -1,0 +1,15 @@
+{
+  "name": "set_primary_goals",
+  "description": "Store the user's stated emotional wellness objectives and aspirations",
+  "wait_for_response": true,
+  "response_timeout_seconds": 1,
+  "parameters": [
+    {
+      "data_type": "array",
+      "identifier": "goals",
+      "required": true,
+      "value_type": "LLM Prompt", 
+      "description": "Array of user's emotional wellness goals as strings. Keep them concise and actionable."
+    }
+  ]
+}

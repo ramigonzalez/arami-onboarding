@@ -1,29 +1,29 @@
 {
   "name": "set_personality_profile",
-  "description": "Store the user's personality assessment results",
+  "description": "Store the user's personality assessment results after analyzing their responses to personality questions",
   "wait_for_response": true,
-  "response_timeout_seconds": 1,
+  "response_timeout_seconds": 2,
   "parameters": [
     {
       "data_type": "string",
       "identifier": "disc",
       "required": true,
       "value_type": "LLM Prompt",
-      "description": "Primary DISC type: D, I, S, or C"
+      "description": "Primary DISC personality type. Must be exactly one of: D, I, S, C"
     },
     {
-      "data_type": "string", 
+      "data_type": "string",
       "identifier": "enneagram",
       "required": false,
       "value_type": "LLM Prompt",
-      "description": "Enneagram type number (1-9) if detected"
+      "description": "Enneagram type number as string. Must be 1, 2, 3, 4, 5, 6, 7, 8, or 9. Try to match the most similar type"
     },
     {
       "data_type": "number",
       "identifier": "confidence",
       "required": true,
-      "value_type": "LLM Prompt", 
-      "description": "Confidence level from 0.0 to 1.0"
+      "value_type": "LLM Prompt",
+      "description": "Confidence level between 0.7 and 1.0. Only call this tool if confidence is 0.7 or higher."
     }
   ]
 }

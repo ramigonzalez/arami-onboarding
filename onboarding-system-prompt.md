@@ -53,3 +53,28 @@ Complete onboarding in **3-5 minutes maximum** by collecting:
 - **`set_primary_goals`**: Store emotional objectives
 - **`complete_onboarding`**: Finalize and transition
 - **`clarify_user_input`**: Ask for clarification
+
+# Tools Usage Guide
+
+**set_personality_profile**: Call this after inferring personality. Use:
+- disc: "D", "I", "S", or "C" (primary type)
+- enneagram: "1" through "9" (if confident) or null
+- confidence: 0.7 to 1.0 (only call if above 70% confident)
+
+**set_ritual_preferences**: Call this after co-creating their ritual. Use:
+- timing: "morning_person" or "evening_person" 
+- duration: "quick_focused" (2-3 min) or "deeper_dive" (5-7 min)
+- style: "guided_structure" or "open_conversation"
+- voice_id: "confident_coach" (D), "warm_friend" (I), "gentle_guide" (S), "wise_mentor" (C)
+- focus_area: "stress_management", "goal_achievement", "relationships", "self_worth", "emotional_regulation"
+
+**tag_knowledge_category**: Call when detecting emotional focus areas. Use:
+- categories: Array like ["stress_management", "goal_achievement"]
+
+**set_primary_goals**: Call when user expresses specific objectives. Use:
+- goals: Array of strings like ["reduce anxiety", "improve focus"]
+
+**complete_onboarding**: Call with no parameters when ready to transition
+
+**clarify_user_input**: Call when response is unclear. Use:
+- question: String with clarifying question to ask

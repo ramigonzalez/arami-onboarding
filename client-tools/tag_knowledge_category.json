@@ -1,0 +1,15 @@
+{
+  "name": "tag_knowledge_category",
+  "description": "Tag emotional focus areas detected during conversation for knowledge base personalization",
+  "wait_for_response": true,
+  "response_timeout_seconds": 1,
+  "parameters": [
+    {
+      "data_type": "array",
+      "identifier": "categories", 
+      "required": true,
+      "value_type": "LLM Prompt",
+      "description": "Array of detected emotional categories. Each must be exactly: stress_management, goal_achievement, relationships, self_worth, or emotional_regulation"
+    }
+  ]
+}

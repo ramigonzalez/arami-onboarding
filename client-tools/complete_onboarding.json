@@ -1,0 +1,7 @@
+{
+  "name": "complete_onboarding",
+  "description": "Finalize the onboarding process and transition user to their first Arami session",
+  "wait_for_response": true,
+  "response_timeout_seconds": 3,
+  "parameters": []
+}

@@ -1,15 +1,21 @@
 {
+  "type": "client",
   "name": "set_primary_goals",
   "description": "Store the user's stated emotional wellness objectives and aspirations",
-  "wait_for_response": true,
-  "response_timeout_seconds": 1,
   "parameters": [
     {
-      "data_type": "array",
-      "identifier": "goals",
+      "id": "goals",
+      "type": "array",
+      "description": "Array of user's emotional wellness goals as strings. Keep them concise and actionable.",
+      "dynamic_variable": "",
+      "constant_value": "",
       "required": true,
-      "value_type": "LLM Prompt", 
-      "description": "Array of user's emotional wellness goals as strings. Keep them concise and actionable."
+      "value_type": "llm_prompt"
     }
-  ]
+  ],
+  "expects_response": true,
+  "response_timeout_secs": 1,
+  "dynamic_variables": {
+    "dynamic_variable_placeholders": {}
+  }
 }

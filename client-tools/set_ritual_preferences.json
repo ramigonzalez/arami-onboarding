@@ -1,43 +1,57 @@
 {
-  "name": "set_ritual_preferences", 
+  "type": "client",
+  "name": "set_ritual_preferences",
   "description": "Save the user's personalized daily ritual template and voice selection after co-creating their preferences",
-  "wait_for_response": true,
-  "response_timeout_seconds": 2,
   "parameters": [
     {
-      "data_type": "string",
-      "identifier": "timing",
+      "id": "timing",
+      "type": "string",
+      "description": "When they prefer sessions. Must be exactly: morning_person or evening_person",
+      "dynamic_variable": "",
+      "constant_value": "",
       "required": true,
-      "value_type": "LLM Prompt",
-      "description": "When they prefer sessions. Must be exactly: morning_person or evening_person"
+      "value_type": "llm_prompt"
     },
     {
-      "data_type": "string",
-      "identifier": "duration",
+      "id": "duration",
+      "type": "string",
+      "description": "Session length preference. Must be exactly: quick_focused or deeper_dive",
+      "dynamic_variable": "",
+      "constant_value": "",
       "required": true,
-      "value_type": "LLM Prompt", 
-      "description": "Session length preference. Must be exactly: quick_focused or deeper_dive"
+      "value_type": "llm_prompt"
     },
     {
-      "data_type": "string",
-      "identifier": "style",
+      "id": "style",
+      "type": "string",
+      "description": "Interaction style. Must be exactly: guided_structure or open_conversation",
+      "dynamic_variable": "",
+      "constant_value": "",
       "required": true,
-      "value_type": "LLM Prompt",
-      "description": "Interaction style. Must be exactly: guided_structure or open_conversation"
+      "value_type": "llm_prompt"
     },
     {
-      "data_type": "string",
-      "identifier": "voice_id",
+      "id": "voice_id",
+      "type": "string",
+      "description": "Selected voice type. Must be exactly: confident_coach, warm_friend, gentle_guide, or wise_mentor",
+      "dynamic_variable": "",
+      "constant_value": "",
       "required": true,
-      "value_type": "LLM Prompt",
-      "description": "Selected voice type. Must be exactly: confident_coach, warm_friend, gentle_guide, or wise_mentor"
+      "value_type": "llm_prompt"
     },
     {
-      "data_type": "string", 
-      "identifier": "focus_area",
+      "id": "focus_area",
+      "type": "string",
+      "description": "Primary emotional focus. Must be exactly: stress_management, goal_achievement, relationships, self_worth, or emotional_regulation",
+      "dynamic_variable": "",
+      "constant_value": "",
       "required": true,
-      "value_type": "LLM Prompt",
-      "description": "Primary emotional focus. Must be exactly: stress_management, goal_achievement, relationships, self_worth, or emotional_regulation"
+      "value_type": "llm_prompt"
     }
-  ]
+  ],
+  "expects_response": true,
+  "response_timeout_secs": 2,
+  "dynamic_variables": {
+    "dynamic_variable_placeholders": {}
+  }
 }

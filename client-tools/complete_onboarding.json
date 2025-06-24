@@ -1,7 +1,11 @@
 {
-  "name": "complete_onboarding",
+  "type": "client",
+  "name": "complete_onboarding", 
   "description": "Finalize the onboarding process and transition user to their first Arami session",
-  "wait_for_response": true,
-  "response_timeout_seconds": 3,
-  "parameters": []
+  "parameters": [],
+  "expects_response": true,
+  "response_timeout_secs": 3,
+  "dynamic_variables": {
+    "dynamic_variable_placeholders": {}
+  }
 }

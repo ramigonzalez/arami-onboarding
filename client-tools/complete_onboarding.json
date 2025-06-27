@@ -1,7 +1,7 @@
 {
   "type": "client",
   "name": "complete_onboarding",
-  "description": "Finalize the onboarding process and transition user to their first Arami session",
+  "description": "Finalize and save the onboarding data without ending the session. Agent should provide closing message after this tool and then call end_call to terminate the conversation.",
   "parameters": [],
   "expects_response": true,
   "response_timeout_secs": 3,

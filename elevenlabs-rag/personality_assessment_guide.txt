@@ -44,30 +44,20 @@
 
 ## Enneagram Motivation Patterns
 
-### Type 1 - The Perfectionist
-**Core Motivation:** Being good, right, perfect
-**Fear:** Being corrupt, evil, defective
-**Detection:** "I want to do things the right way," perfectionist language
-
-### Type 2 - The Helper
-**Core Motivation:** Feeling loved
-**Fear:** Being unloved or unwanted for themselves
-**Detection:** Focus on others' needs, helping language
-
 ### Type 3 - The Achiever  
 **Core Motivation:** Feeling valuable and worthwhile
 **Fear:** Being worthless without achievement
 **Detection:** Goal language, success metrics, image consciousness
 
-### Type 4 - The Individualist
-**Core Motivation:** Finding themselves and their significance
-**Fear:** Having no identity or personal significance
-**Detection:** Uniqueness themes, deep emotions, authenticity focus
+### Type 1 - The Perfectionist
+**Core Motivation:** Being good, right, perfect
+**Fear:** Being corrupt, evil, defective
+**Detection:** "I want to do things the right way," perfectionist language
 
-### Type 7 - The Enthusiast
-**Core Motivation:** Maintaining happiness and satisfaction
-**Fear:** Being trapped in pain or deprivation
-**Detection:** Multiple interests, future planning, avoiding negative emotions
+### Type 8 - The Challenger
+**Core Motivation:** Being self-reliant and in control of their own life
+**Fear:** Being controlled or vulnerable to others
+**Detection:** Direct, forceful language; talks about control, power, justice, leadership, fighting for causes
 
 ### Type 9 - The Peacemaker
 **Core Motivation:** Maintaining inner and outer peace

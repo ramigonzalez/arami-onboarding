@@ -1,0 +1,21 @@
+{
+  "type": "client",
+  "name": "set_ui_step",
+  "description": "Navigate to the next step in the onboarding UI while continuing personality assessment",
+  "parameters": [
+    {
+      "id": "step",
+      "type": "string",
+      "description": "The step to navigate to. Must be exactly: welcome, emotional_discovery, ritual_design, or voice_selection",
+      "dynamic_variable": "",
+      "constant_value": "",
+      "required": true,
+      "value_type": "llm_prompt"
+    }
+  ],
+  "expects_response": true,
+  "response_timeout_secs": 2,
+  "dynamic_variables": {
+    "dynamic_variable_placeholders": {}
+  }
+}

@@ -7,10 +7,12 @@
       "id": "categories",
       "type": "array",
       "description": "Array of detected emotional categories. Each must be exactly: stress_management, goal_achievement, relationships, self_worth, or emotional_regulation",
-      "dynamic_variable": "",
-      "constant_value": "",
       "required": true,
-      "value_type": "llm_prompt"
+      "items": {
+        "type": "string",
+        "description": "Valid categories are: 'stress_management', 'goal_achievement', 'relationships', 'self_worth', 'emotional_regulation'",
+        "constant_value": ""
+      }
     }
   ],
   "expects_response": true,

@@ -1,6 +1,6 @@
 {
   "type": "client",
-  "name": "complete_onboarding", 
+  "name": "complete_onboarding",
   "description": "Finalize the onboarding process and transition user to their first Arami session",
   "parameters": [],
   "expects_response": true,

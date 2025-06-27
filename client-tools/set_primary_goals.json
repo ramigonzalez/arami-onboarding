@@ -7,10 +7,12 @@
       "id": "goals",
       "type": "array",
       "description": "Array of user's emotional wellness goals as strings. Keep them concise and actionable.",
-      "dynamic_variable": "",
-      "constant_value": "",
       "required": true,
-      "value_type": "llm_prompt"
+      "items": {
+        "type": "string",
+        "description": "Goals in string",
+        "constant_value": ""
+      }
     }
   ],
   "expects_response": true,

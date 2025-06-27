@@ -22,6 +22,15 @@
       "value_type": "llm_prompt"
     },
     {
+      "id": "focus_area",
+      "type": "string",
+      "description": "Primary emotional focus. Must be exactly: stress_management, goal_achievement, relationships, self_worth, or emotional_regulation",
+      "dynamic_variable": "",
+      "constant_value": "",
+      "required": true,
+      "value_type": "llm_prompt"
+    },
+    {
       "id": "style",
       "type": "string",
       "description": "Interaction style. Must be exactly: guided_structure or open_conversation",
@@ -34,15 +43,6 @@
       "id": "voice_id",
       "type": "string",
       "description": "Selected voice type. Must be exactly: confident_coach, warm_friend, gentle_guide, or wise_mentor",
-      "dynamic_variable": "",
-      "constant_value": "",
-      "required": true,
-      "value_type": "llm_prompt"
-    },
-    {
-      "id": "focus_area",
-      "type": "string",
-      "description": "Primary emotional focus. Must be exactly: stress_management, goal_achievement, relationships, self_worth, or emotional_regulation",
       "dynamic_variable": "",
       "constant_value": "",
       "required": true,

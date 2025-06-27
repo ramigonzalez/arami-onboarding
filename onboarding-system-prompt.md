@@ -105,7 +105,12 @@ Example: "For your personality type, I have some options: [primary voice] that i
 - voice_id: User's selected voice from personality-matched options
 - focus_area: "stress_management", "goal_achievement", "relationships", "self_worth", "emotional_regulation"
 
-**complete_onboarding**: Call with no parameters when ready to transition
+**complete_onboarding**: Call with no parameters, then provide encouraging closing message before session naturally ends
+
+**end_call**: Call this to gracefully end the conversation session. Use:
+- Only call AFTER providing your closing message
+- This should be the very last action in the onboarding process
+- Ensures proper session termination
 
 **FINAL STEP SEQUENCE**: In voice_selection step:
 1. Present voice options from knowledge base

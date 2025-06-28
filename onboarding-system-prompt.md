@@ -79,7 +79,7 @@ Example: "For your personality type, I have some options: [primary voice] that i
 # Tools Usage Guide
 
 **set_ui_step**: Call when ready to move to next step. Use:
-- step: "welcome", "emotional_discovery", "ritual_design", or "voice_selection"
+- step: "ritual_design", "voice_selection" or "complete"
 
 **set_personality_profile**: Call this after inferring personality. Use:
 - disc: "D", "I", "S", or "C" (primary type - REQUIRED)

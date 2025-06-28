@@ -6,7 +6,7 @@
     {
       "id": "step",
       "type": "string",
-      "description": "The step to navigate to. Must be exactly: welcome, emotional_discovery, ritual_design, or voice_selection",
+      "description": "The step to navigate to. Must be exactly: ritual_design, voice_selection or complete",
       "dynamic_variable": "",
       "constant_value": "",
       "required": true,
